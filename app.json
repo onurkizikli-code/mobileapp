@@ -14,27 +14,16 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.celebverse.app",
-      "buildNumber": "1.0.0"
+      "bundleIdentifier": "com.celebverse.app"
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#6366F1"
       },
-      "package": "com.celebverse.app",
-      "versionCode": 1
+      "package": "com.celebverse.app"
     },
     "web": {
       "bundler": "metro"
-    },
-    "plugins": [
-      "expo-av",
-      "expo-media-library"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "your-project-id"
-      }
     }
   }
 }
