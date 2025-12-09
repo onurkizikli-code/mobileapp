@@ -5,7 +5,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 
 import { RootStackParamList, MainTabParamList } from './types';
-import { COLORS } from '../constants/theme';
 
 // Screens
 import HomeScreen from '../screens/HomeScreen';
@@ -42,12 +41,12 @@ function MainTabs() {
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: COLORS.primary,
-        tabBarInactiveTintColor: COLORS.gray400,
+        tabBarActiveTintColor: '#6366F1',
+        tabBarInactiveTintColor: '#9CA3AF',
         tabBarStyle: {
-          backgroundColor: COLORS.white,
+          backgroundColor: '#FFFFFF',
           borderTopWidth: 1,
-          borderTopColor: COLORS.gray200,
+          borderTopColor: '#E5E7EB',
           paddingBottom: 8,
           paddingTop: 8,
           height: 64,
@@ -90,9 +89,9 @@ export default function AppNavigator() {
       <Stack.Navigator
         screenOptions={{
           headerStyle: {
-            backgroundColor: COLORS.primary,
+            backgroundColor: '#6366F1',
           },
-          headerTintColor: COLORS.white,
+          headerTintColor: '#FFFFFF',
           headerTitleStyle: {
             fontWeight: '600' as const,
           },
