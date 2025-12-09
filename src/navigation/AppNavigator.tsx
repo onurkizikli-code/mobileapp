@@ -54,7 +54,7 @@ function MainTabs() {
         },
         tabBarLabelStyle: {
           fontSize: 12,
-          fontWeight: '500',
+          fontWeight: '500' as const,
         },
         headerShown: false,
       })}
@@ -67,7 +67,7 @@ function MainTabs() {
       <Tab.Screen
         name="HistoryTab"
         component={HistoryScreen}
-        options={{ tabBarLabel: 'Geçmiş' }}
+        options={{ tabBarLabel: 'Gecmis' }}
       />
       <Tab.Screen
         name="FavoritesTab"
@@ -94,7 +94,7 @@ export default function AppNavigator() {
           },
           headerTintColor: COLORS.white,
           headerTitleStyle: {
-            fontWeight: '600',
+            fontWeight: '600' as const,
           },
           headerBackTitle: 'Geri',
         }}
@@ -107,32 +107,32 @@ export default function AppNavigator() {
         <Stack.Screen
           name="OccasionSelect"
           component={OccasionSelectScreen}
-          options={{ title: 'Özel Gün Seçin' }}
+          options={{ title: 'Ozel Gun Secin' }}
         />
         <Stack.Screen
           name="CharacterSelect"
           component={CharacterSelectScreen}
-          options={{ title: 'Karakter Seçin' }}
+          options={{ title: 'Karakter Secin' }}
         />
         <Stack.Screen
           name="BackgroundSelect"
           component={BackgroundSelectScreen}
-          options={{ title: 'Arka Plan Seçin' }}
+          options={{ title: 'Arka Plan Secin' }}
         />
         <Stack.Screen
           name="MessageCompose"
           component={MessageComposeScreen}
-          options={{ title: 'Mesajınızı Yazın' }}
+          options={{ title: 'Mesajinizi Yazin' }}
         />
         <Stack.Screen
           name="Preview"
           component={PreviewScreen}
-          options={{ title: 'Önizleme' }}
+          options={{ title: 'Onizleme' }}
         />
         <Stack.Screen
           name="Share"
           component={ShareScreen}
-          options={{ title: 'Paylaş' }}
+          options={{ title: 'Paylas' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
